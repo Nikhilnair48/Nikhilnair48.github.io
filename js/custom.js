@@ -48,7 +48,7 @@ $(document).ready(function(){
 });
 
 
-// NOTE BEING USED - READY FOR MANUAL GARBAGE COLLECTION
+// NOT BEING USED - READY FOR MANUAL GARBAGE COLLECTION
 //var currentSectionID = "#myCarousel";
 
 // TO HANDLE MOUSE HOVERING OVER THE MENU ITEMS
@@ -97,7 +97,7 @@ $(window).scroll(function(event) {
 	}
 });
 //$("ul[class='nav.navbar-nav'] > li[class='active'")
-
+/*
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -135,7 +135,7 @@ $('a[href*="#"]')
       }
     }
   });
-
+*/
 /* This is the plugin */
 (function(a){
 	a.createModal=function(b) {

@@ -233,7 +233,7 @@ body{
     background-image: none
 }
 .carousel.slide > .carousel-inner {
-    border-radius: 2em;
+    /*border-radius: 2em;*/
 }
 
 /* SCALE FOR SMALLER SCREENS */
