@@ -5,7 +5,7 @@
 
 /* HOME - FOR THE BACKGROUND VIDEO*/
 div.background {
-    height: 100vw;
+    width: inherit;
     height: 100vh;
 }
 
