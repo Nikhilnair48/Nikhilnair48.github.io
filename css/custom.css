@@ -11,9 +11,9 @@ div.background {
 
 div.transbox {
     z-index: 1;
-    background-color: #000000;
     position: absolute;
     display: inline;
+    background-color: #000000;
     opacity: .3;
 }
 video::-webkit-media-controls {
@@ -35,4 +35,11 @@ video::-webkit-media-controls {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
+}
+
+#homeVideo {
+    position: absolute;
+    right: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
