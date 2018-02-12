@@ -43,8 +43,41 @@
 		</div>
 	</nav>
 
-	<section id="resume">
+	<header id="myCarousel" class="carousel slide">
+			<div class="overlay">
+				<h1>Nikhil Nair</h1>
+				<div id="socialMedia" class="icons">
+					<a href="https://www.github.com/Nikhilnair48"><img src="images/GitHub-Mark-Light-120px-plus.png" style="height:100px;width:100px;" /> </a>
+					<a href="https://www.google.com"><img src="images/1485293621_linkedin_circle_color.png" style="height:100px;width:100px;" /></a>
+				</div>
+			</div>
+			
+			<div>
+				<!--https://s3.amazonaws.com/nikhil-nair-personal-website-home-page-video/my_website_home_page.mp4-->
+				<div class="background">
+					<div class="transbox"></div>
+					<video loop="loop" id="myVideo" style="width=device-width; height: 100vh; z-index: 10" autoplay="autoplay" muted controls="false">	<!-- width: 100vw;  -->
+							<source src="images/images/my_website_home_page.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+				
+		</header>
 
+	<section id="resume">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-lg-12 animatedParent animateOnce" style="text-align: center; left: 0">
+					<h1 class="animated flipInX">My Resume</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div style="left:0; width:100%;text-align:center">
+					<a class="btn btn-primary view-pdf" href="Nikhil_Nair_PDF.pdf">PDF</a>
+					<a class="btn btn-primary" href="ResumeFall2015Winter.docx">WORD DOC</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="projects">
