@@ -11,8 +11,9 @@
 	<meta name="Viewport" content="width=device-width initial-scale=1.0">
 	<link href = "css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
-	<link href="css/full-slider.css" rel="stylesheet">
-	<link href="css/animations.css" rel="stylesheet">
+	<link href="css/custom-projects.css" rel="stylesheet">
+	<!--<link href="css/full-slider.css" rel="stylesheet">-->
+	<!--<link href="css/animations.css" rel="stylesheet">-->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -20,7 +21,6 @@
 </head>
 
 <body>
-
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -43,7 +43,7 @@
 		</div>
 	</nav>
 
-	<section id="myCarousel" class="carousel slide">
+	<section id="intro-content">
 		<div class="overlay">
 			<h1>Nikhil Nair</h1>
 			<div id="socialMedia" class="icons">
@@ -55,8 +55,7 @@
 		<div class="background">
 			<!--https://s3.amazonaws.com/nikhil-nair-personal-website-home-page-video/my_website_home_page.mp4-->
 			<div class="transbox"></div>
-			
-			<video loop="loop" id="homeVideo" style="width: device-width; height: 100vh; z-index: 10" autoplay="autoplay" muted controls="false">	<!-- width: 100vw;  -->
+			<video loop="loop" id="homeVideo" autoplay="autoplay" muted controls="false">	<!-- width: 100vw;  -->
 				<source src="images/images/my_website_home_page.mp4" type="video/mp4">
 			</video>
 		</div>
@@ -65,8 +64,8 @@
 	<section id="resume">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-12 col-lg-12 animatedParent animateOnce" style="text-align: center; left: 0">
-					<h1 class="animated flipInX">My Resume</h1>
+				<div class="col-sm-12 col-lg-12 text-center">
+					<h1>My Resume</h1>
 				</div>
 			</div>
 			<div class="row">
@@ -79,7 +78,76 @@
 	</section>
 
 	<section id="projects">
-
+		<div class="container-fluid">
+			<div class="row text-center header-padding-bottom">
+				<h1>My projects</h1>
+			</div>
+			<div class="row">	<!-- ROW 1 -->
+				<div class="col-lg-4 col-sm-6" id="project1">	<!-- ROW 1 PROJECT 1 -->
+					<a class="portfolio-box" data-imgsrc="images/projects/Chess/1SplashScreen.png" data-title="TITLE" data-description="ABCABCABC">
+						<img src="images/projects/Chess/1SplashScreen.png" class="img-responsive-custom" alt="" />
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+										Core Java Application
+								</div>
+								<div class="project-name">
+									Chess Game
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>	<!-- /PROJECT 1 -->
+				<div class="col-lg-4 col-sm-6" id="project2">	<!-- ROW 1 PROJECT 2 -->
+					<a class="portfolio-box" data-imgsrc="images/projects/Chess/1SplashScreen.png" data-title="TITLE" data-description="ABCABCABC">
+						<img src="images/projects/ZombieCrushSaga/1splashScreen.png" class="img-responsive-custom" alt="" />
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									Core Java Application
+								</div>
+								<div class="project-name">
+									Zombie Crush Saga
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>	<!-- /PROJECT 2 -->
+				<div class="col-lg-4 col-sm-6" id="project3">	<!-- ROW 1 PROJECT 3 -->
+					<a class="portfolio-box" data-imgsrc="images/projects/Chess/1SplashScreen.png" data-title="TITLE" data-description="ABCABCABC">
+						<img src="images/projects/DatingPlusPlus/1HomeScreen.png" class="img-responsive-custom" alt="" />
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									Java EE Application
+								</div>
+								<div class="project-name">
+									Dating Plus Plus
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>	<!-- /PROJECT 3 -->
+			</div>
+			<div class="row">	<!-- ROW 2 -->
+				<!-- ROW 2 PROJECT 1 -->
+				<div class="col-lg-4 col-sm-6" id="project4">
+					<a class="portfolio-box" data-imgsrc="images/projects/Chess/1SplashScreen.png" data-title="TITLE" data-description="ABCABCABC">
+						<img src="images/projects/ScheduleSharp/1loginScreen.png" class="img-responsive-custom" alt="" />
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									Java EE Application
+								</div>
+								<div class="project-name">
+									Schedule Sharp
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>	<!-- /ROW 2 PROJECT 1 -->
+			</div>
+		</div>
 	</section>
 
 	<section id="contact-me">
@@ -89,6 +157,13 @@
 	<footer id="footer">
 
 	</footer>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+			});
+		</script>
 
 </body>
 
