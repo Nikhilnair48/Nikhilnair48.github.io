@@ -163,11 +163,11 @@ $.fn.imagesLoaded = function( callback ) {
 
 var Grid = (function() {
 		// grid selector
-		var $selector = '#projects', 
+		var $selector = '#og-grid', 
 		// list of items
 		$grid = $( $selector ),
 		// the items
-		$items = $grid.children( '#projects > div > div.row:nth-child(n+2) > div > a' ),
+		$items = $grid.children( 'li' ),
 		// current expanded item's index
 		current = -1,
 		// position (top) of the expanded item

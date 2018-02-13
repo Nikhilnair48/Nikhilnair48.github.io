@@ -64,7 +64,7 @@ video::-webkit-media-controls {
 }
 
 /* PROJECTS CONTAINER */
-#projects > div > div.row:nth-child(n+2) {
+/*#projects > div > div.row:nth-child(n+2) {
     height: 220px;
     margin-bottom: 1%;
 }
@@ -78,7 +78,7 @@ video::-webkit-media-controls {
     height: inherit;
     width: 100%;
     max-width: 100%;
-}
+}*/
 
 
 /* THE DETAIL ONCE A PROJECT PREVIEW IS CLICKED */
