@@ -114,8 +114,41 @@
 		</div>
 	</section>
 
-	<section id="contact-me">
-
+	<section id="contact-me" style="top:0">
+		<!--<div id="googlemaps" style="height:550px; width:100%; position:aboslute; top:0; left:0; z-index:0"></div>-->
+		<!--<div class="row" style="position:absolute; top:0; width:100%; height: 100%; opacity:0.2; background-color:black; "></div>-->
+			
+		<!--<div class="well" style="width:50%; margin:1% auto; z-index:1; top:2%; background:rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%; left:25%; border:none">-->
+		
+		<div class="row text-center header-padding-bottom">
+			<h1>Drop a hi?</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="form-group">
+					<label for="name">
+						Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+				</div>
+				<div class="form-group">
+					<label for="email">
+						Email Address</label>
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+						</span>
+						<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+				</div>
+				<div class="form-group">
+					<label for="name">
+						Message</label>
+					<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+						placeholder="Message"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary pull-right" id="btnContactUs"onmouseover="sayHi('btnContactUs')"><span>Submit</span></button>
+			</div>
+		</div>
+		<!--</div>-->	 <!-- /DIV W/ CLASS "well" -->
+					
 	</section>
 
 	<footer id="footer">
@@ -123,11 +156,43 @@
 	</footer>
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/grid.js"></script>
+	<!--
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script>
 			$(function() {
 				Grid.init();
 			});
+		
+			// The latitude and longitude of your business / place
+			var position = [40.712817, -74.006460];
+			
+			function showGoogleMaps() {
+			
+				var latLng = new google.maps.LatLng(position[0], position[1]);
+			
+				var mapOptions = {
+					zoom: 16, // initialize zoom level - the max value is 21
+					streetViewControl: false, // hide the yellow Street View pegman
+					scaleControl: true, // allow users to zoom the Google Map
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					center: latLng
+				};
+			
+				map = new google.maps.Map(document.getElementById('googlemaps'),
+					mapOptions);
+			
+				// Show the default red marker at the location
+				marker = new google.maps.Marker({
+					position: latLng,
+					map: map,
+					draggable: false,
+					animation: google.maps.Animation.DROP
+				});
+			}
+			
+			google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 		</script>
+	-->
 
 </body>
 
