@@ -49,9 +49,10 @@ video::-webkit-media-controls {
 }
 
 #homeVideo {
-    z-index: 1;
-    width: device-width; 
-    height: 100vh;
+	z-index: 1;
+	/*CHANGED ON 2/27/17*/
+    /*width: device-width; 
+    height: 100vh;*/
     min-width: 100%;
     min-height: 100%;
     position: absolute;
