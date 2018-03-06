@@ -52,11 +52,12 @@ video::-webkit-media-controls {
 	z-index: 1;
 	/*CHANGED ON 2/27/17*/
     /*width: device-width; 
-    height: 100vh;*/
+	height: 100vh;*/
+	height: inherit;
     min-width: 100%;
     min-height: 100%;
     position: absolute;
-    right: 0;
+	right: 0;
 }
 
 /* RESUME CONTAINER */
