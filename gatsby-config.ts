@@ -9,16 +9,20 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  pathPrefix: "/Nikhilnair48.github.io",
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sharp", 
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `images`,
-      path: `${__dirname}/src/images/`,
-    },
-  }, 
-  "gatsby-transformer-sharp"]
+  plugins: [
+    "gatsby-plugin-styled-components", 
+    "gatsby-plugin-image", 
+    "gatsby-plugin-sharp", 
+    "gatsby-plugin-react-helmet", 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    }, 
+    "gatsby-transformer-sharp"
+  ]
 };
 
 export default config;

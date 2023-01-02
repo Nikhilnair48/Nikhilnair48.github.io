@@ -1,5 +1,5 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
+import { HeadFC, PageProps, withPrefix } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled, { createGlobalStyle, keyframes } from "styled-components"
 
@@ -163,15 +163,13 @@ const IndexPage: React.FC<PageProps> = () => {
         <NavBar />
         <section id="home-page">
           <BackgroundContainer>
-            <StaticImage
-              src="../images/home.jpg"
-              quality={90}
-              style={{height: '100%', maxHeight: '100vh', width: '100%', objectFit: 'cover'}}
-              alt="Underwater view of clear, blue body of water"
-            />
+          <img 
+          style={{height: '100%', maxHeight: '100vh', width: '100%', objectFit: 'cover'}}
+          src={'/home.jpg'} alt="Home" />
+            
             <HomeBackgroundContainer />
           </BackgroundContainer>
-          <NameContainer style={{display: 'inline-flex'}}>
+          <NameContainer style={{ display: 'inline-flex' }}>
             <HomeNameStyle>Nikhil Nair</HomeNameStyle>
           </NameContainer>
         </section>
