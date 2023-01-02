@@ -164,8 +164,7 @@ const IndexPage = () => {
         <NavBar />
         <section id="home-page" style={{maxHeight: '100vh', maxWidth: '100vw'}}>
           <BackgroundContainer>
-          {/* <img src={ 'https://raw.githubusercontent.com/Nikhilnair48/Nikhilnair48.github.io/master/static/home.jpg' } alt="Home" /> */}
-            <StaticImage style={{width: "100%"}} src="https://raw.githubusercontent.com/Nikhilnair48/Nikhilnair48.github.io/master/static/home.jpg" alt="A dinosaur" />
+            <StaticImage style={{width: "100%"}} src="https://nikhil-personal.s3.ap-south-1.amazonaws.com/home.jpg" alt="A dinosaur" />
             <HomeBackgroundContainer />
           </BackgroundContainer>
           <NameContainer style={{ display: 'inline-flex' }}>
