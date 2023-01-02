@@ -9,11 +9,13 @@ import styled, { createGlobalStyle, keyframes } from "styled-components"
     padding: 0;
     margin: 0;
     width: 100vw;
+    max-width:100%;
     height: 100vh;
   }
 `
 const HomeBackgroundContainer = styled.div`
-  width: 100%;
+  width: 100vw;
+  max-width:100%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -62,8 +64,8 @@ const HomeNameStyle = styled.h1`
 
 const NavBarContainer = styled.nav`
 z-index: 15;    
-position: absolute;
-    top: 2%;
+position: fixed;
+    top: 5%;
     right: 0;
     left: auto;
     width: 319px;
@@ -162,14 +164,15 @@ const IndexPage = () => {
     <Layout>
       <main>
         <NavBar />
-        <section id="home-page" style={{maxHeight: '100vh', maxWidth: '100vw'}}>
-          <BackgroundContainer>
-            <StaticImage style={{width: "100%"}} src="https://nikhil-personal.s3.ap-south-1.amazonaws.com/home.jpg" alt="A dinosaur" />
+        <section id="home" style={{height: '100%', width: '100%', boxSizing: 'border-box'}}>
+            <StaticImage style={{width: "100%", height: "100%"}} src="https://nikhil-personal.s3.ap-south-1.amazonaws.com/home.jpg" alt="A dinosaur" />
             <HomeBackgroundContainer />
-          </BackgroundContainer>
           <NameContainer style={{ display: 'inline-flex' }}>
             <HomeNameStyle>Nikhil Nair</HomeNameStyle>
           </NameContainer>
+        </section>
+        <section id="about" style={{height: '100%', width: '100%', boxSizing: 'border-box', backgroundColor: "$1D1E21"}}>
+          <h1>ABout</h1>
         </section>
     </main>
     </Layout>
