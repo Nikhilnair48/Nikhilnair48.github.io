@@ -110,7 +110,7 @@ position: fixed;
     
     #indicator {
       position: absolute;
-      left: 5%;
+      left: 8%;
       bottom: 0;
       width: 30px;
       height: 3px;
@@ -195,13 +195,29 @@ justify-content: center;
 padding: 5rem;
 `
 
+const StyledContact = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 68%);
+  fontWeight: bold;
+  fontFamily: Anonymous Pro, monospace;
+}
+a:hover {
+  color: #878787;
+}
+`
+
 const NavBar = () => {
   return (
     <NavBarContainer>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Resume</a>
-      <a href="#">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      {/* <a href="#">Contact</a> */}
       <div id="indicator"></div>
     </NavBarContainer>
   )
@@ -215,15 +231,19 @@ const IndexPage = () => {
         <section id="home" style={{height: '100%', width: '100%', boxSizing: 'border-box'}}>
             <StaticImage style={{width: "100%", height: "100%"}} src="https://nikhil-personal.s3.ap-south-1.amazonaws.com/home.jpg" alt="A nice, little picture" />
             <HomeBackgroundContainer />
-          <NameContainer style={{ display: 'inline-flex' }}>
+          <NameContainer style={{ display: 'block' }}>
             <HomeNameStyle>Nikhil Nair</HomeNameStyle>
+            <StyledContact>
+              <a href="https://www.linkedin.com/in/nikhil48/">LinkedIn</a>
+              <a href="mailto:nikhil.nair48@gmail.com">Email</a>
+            </StyledContact>
           </NameContainer>
         </section>
         <section id="about" style={{height: '100%', width: '100%', boxSizing: 'border-box', background: "#1D1E21"}}>
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <StyledBioSection>
               <AboutMeSection>
-                    Welcome to my station on the Internet!
+                    Welcome to my corner on the Internet!
                     <br /> <br />
                     I’ve been a regular in the Tech industry since 2015. Though an admirer of the advances in my field, I enjoy discovering exciting intersections of technology, education and space; biotech is cool too. If you’re looking for collaborations in those areas, feel free to get in touch.
                     <br /> <br />
@@ -240,13 +260,11 @@ const IndexPage = () => {
             <a style={{color: '#E2E1DE', fontFamily: 'Lora, serif', background: "#3C153B", padding: "1rem", borderRadius: ".5rem"}} href="https://nikhil-personal.s3.ap-south-1.amazonaws.com/Nikhil+Nair.pdf" target="_blank">View Resume</a>
           </StyledResumeContainer>
         </section>
-        <section id="contact" style={{height: '100%', width: '100%', boxSizing: 'border-box', background: "#70A288"}}>
+        {/* <section id="contact" style={{height: '100%', width: '100%', boxSizing: 'border-box', background: "#70A288"}}>
           <StyledContactSection>
-            <h2>
-            Coming Soon
-            </h2>
+           
           </StyledContactSection>
-        </section>
+        </section> */}
     </main>
     </Layout>
     
